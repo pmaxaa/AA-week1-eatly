@@ -1,0 +1,40 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.logo {
+		display: block;
+		img {
+			// margin-top: 9px;
+		}
+	}
+	ul {
+		display: flex;
+		li {
+			a {
+				font-weight: 500;
+				color: #606060;
+			}
+		}
+	}
+}
+
+.menu-header {
+	width: 47%;
+	ul {
+		gap: 53px;
+	}
+}
+
+.menu-footer {
+	width: 100%;
+	ul {
+		gap: 70px;
+	}
+	.logo {
+		img {
+			width: 150.7px;
+			height: 57px;
+		}
+	}
+}

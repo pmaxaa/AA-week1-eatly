@@ -27,8 +27,6 @@ html {
 }
 
 a {
-	/* font-weight: 500;
-	color: #646cff; */
 	text-decoration: none;
 }
 /*
@@ -43,6 +41,12 @@ body {
 
 ul {
 	list-style: none;
+}
+
+ul,
+p {
+	margin: 0;
+	padding: 0;
 }
 
 button {

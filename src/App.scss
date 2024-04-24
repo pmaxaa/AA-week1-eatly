@@ -9,27 +9,6 @@ header {
 		justify-content: space-between;
 		align-items: center;
 
-		.menu {
-			width: 47%;
-			display: flex;
-			justify-content: space-between;
-			.logo {
-				img {
-					margin-top: 9px;
-				}
-			}
-			ul {
-				display: flex;
-				gap: 53px;
-				li {
-					a {
-						font-weight: 500;
-						color: #606060;
-					}
-				}
-			}
-		}
-
 		.login-buttons {
 			display: flex;
 			gap: 9px;
@@ -46,6 +25,38 @@ header {
 				background-color: var(--primary-color);
 				color: #f9f9f9;
 			}
+		}
+	}
+}
+
+footer {
+	font-size: 17.83px;
+	line-height: 1.5;
+
+	.footer-top {
+		padding: {
+			top: 96px;
+			bottom: 29px;
+		}
+		border-bottom: 1px solid #cbcbcb;
+	}
+
+	.footer-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: {
+			top: 57px;
+			bottom: 81px;
+		}
+
+		ul {
+			display: flex;
+			gap: 54px;
+		}
+
+		p {
+			font-size: 17px;
 		}
 	}
 }

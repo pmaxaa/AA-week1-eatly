@@ -1,31 +1,12 @@
 import './App.scss'
+import Menu from './Menu'
 
 function App() {
 	return (
 		<>
 			<header>
 				<div className='container'>
-					<div className='menu'>
-						<a href='#' className='logo'>
-							<img src='/eatly.svg' alt='Логотип Eatly' />
-						</a>
-						<nav>
-							<ul>
-								<li>
-									<a href='#'>Menu</a>
-								</li>
-								<li>
-									<a href='#'>Blog</a>
-								</li>
-								<li>
-									<a href='#'>Pricing</a>
-								</li>
-								<li>
-									<a href='#'>Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
+					<Menu position='header' />
 					<div className='login-buttons'>
 						<button className='login'>Login</button>
 						<button className='sign-up'>Sign Up</button>
@@ -33,7 +14,40 @@ function App() {
 				</div>
 			</header>
 			<main></main>
-			<footer></footer>
+			<footer>
+				<div className='container'>
+					<div className='footer-top'>
+						<Menu position='footer' />
+					</div>
+
+					<div className='footer-bottom'>
+						<p>© 2023 EATLY All Rights Reserved.</p>
+
+						<ul>
+							<li>
+								<a href='#'>
+									<img src='/instagram.svg' alt='Instagram' />
+								</a>
+							</li>
+							<li>
+								<a href='#'>
+									<img src='/linkedin.svg' alt='LinkedIn' />
+								</a>
+							</li>
+							<li>
+								<a href='#'>
+									<img src='/facebook.svg' alt='Facebook' />
+								</a>
+							</li>
+							<li>
+								<a href='#'>
+									<img src='/twitter.svg' alt='Twitter' />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
 		</>
 	)
 }
