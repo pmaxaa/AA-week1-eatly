@@ -105,15 +105,25 @@ function App() {
 					</div>
 				</section>
 				<section className='features'>
-					<h2 className='visually-hidden'>Features</h2>
-					<dl>
-						<dt>10K+</dt>
-						<dd>Satisfied Costumers All Great Over The World </dd>
-						<dt>4M</dt>
-						<dd>Healthy Dishes Sold Including Milk Shakes Smooth</dd>
-						<dt>99.99%</dt>
-						<dd>Reliable Customer SupportWe Provide Great Experiences</dd>
-					</dl>
+					<div className='features-container'>
+						<h2 className='visually-hidden'>Features</h2>
+						<dl>
+							<div className='feature'>
+								<dt>10K+</dt>
+								<dd>Satisfied Costumers All Great Over The World </dd>
+							</div>
+							<div className='separator'></div>
+							<div className='feature'>
+								<dt>4M</dt>
+								<dd>Healthy Dishes Sold Including Milk Shakes Smooth</dd>
+							</div>
+							<div className='separator'></div>
+							<div className='feature'>
+								<dt>99.99%</dt>
+								<dd>Reliable Customer Support We Provide Great Experiences</dd>
+							</div>
+						</dl>
+					</div>
 				</section>
 			</main>
 			<footer>
