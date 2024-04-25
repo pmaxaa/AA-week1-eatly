@@ -33,9 +33,13 @@ function App() {
 									</p>
 								</div>
 							</div>
-							<div className='info-buttons'>
-								<button className='get-started'>Get Started</button>
-								<button className='go-pro'>Go Pro</button>
+							<div className='info-links'>
+								<a className='get-started' href='#'>
+									Get Started
+								</a>
+								<a href='#' className='go-pro'>
+									Go Pro
+								</a>
 							</div>
 							<div className='rating'>
 								<img src='/trustpilot.jpg' alt='Trustpilot logo' />
@@ -123,6 +127,57 @@ function App() {
 								<dd>Reliable Customer Support We Provide Great Experiences</dd>
 							</div>
 						</dl>
+					</div>
+				</section>
+				<section className='download-app'>
+					<div className='container'>
+						<div className='phone-image'>
+							<img
+								src='/screen.jpg'
+								alt='The phone screen with the Eatly mobile app'
+							/>
+						</div>
+						<div className='text'>
+							<h2>
+								Premium <span>Quality</span> For Your Health
+							</h2>
+							<ul>
+								<li>
+									Premium quality food is made with ingredients that are packed
+									with essential vitamins, minerals.
+								</li>
+								<li>
+									These foods promote overall wellness by support healthy
+									digestion and boosting immunity
+								</li>
+							</ul>
+
+							<a href=''>
+								Download
+								<svg
+									width='28'
+									height='28'
+									viewBox='0 0 28 28'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										d='M6.55469 13.5469H22.3588'
+										stroke='white'
+										stroke-width='2.25773'
+										stroke-linecap='round'
+										stroke-linejoin='round'
+									/>
+									<path
+										d='M14.4561 5.64453L22.3581 13.5466L14.4561 21.4487'
+										stroke='white'
+										stroke-width='2.25773'
+										stroke-linecap='round'
+										stroke-linejoin='round'
+									/>
+								</svg>
+							</a>
+						</div>
 					</div>
 				</section>
 			</main>
