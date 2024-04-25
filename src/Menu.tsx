@@ -8,7 +8,7 @@ export default function Menu({ position }: MenuProps) {
 	return (
 		<div className={`menu menu-${position}`}>
 			<a href='#' className='logo'>
-				<img src='/eatly.svg' alt='Логотип Eatly' />
+				<img src='/eatly.svg' alt='Eatly logo' />
 			</a>
 			<nav>
 				<ul>
