@@ -1,4 +1,5 @@
 import './App.scss'
+import Footer from './Footer'
 import Menu from './Menu'
 
 function App() {
@@ -163,17 +164,133 @@ function App() {
 								>
 									<path
 										d='M6.55469 13.5469H22.3588'
-										stroke='white'
-										stroke-width='2.25773'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='2.25773'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 									<path
 										d='M14.4561 5.64453L22.3581 13.5466L14.4561 21.4487'
-										stroke='white'
-										stroke-width='2.25773'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='2.25773'
+										strokeLinecap='round'
+										strokeLinejoin='round'
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section className='restaurants'>
+					<div className='container'>
+						<h2>
+							Our Top <span>Restaurants</span>
+						</h2>
+						<ul className='restaurant-cards'>
+							<li>
+								<article>
+									<div className='description'>
+										<div className='info'>
+											<p className='tag yellow'>Healthy</p>
+											<h3>The Chicken King</h3>
+											<div className='details'>
+												<time dateTime='24m'>24min</time>
+												<div className='rate'>4.8</div>
+											</div>
+										</div>
+										<div className='save'>
+											<button>
+												<svg
+													viewBox='0 0 16 21'
+													fill='none'
+													xmlns='http://www.w3.org/2000/svg'
+												>
+													<path d='M12.6161 0.88436C9.71458 0.397922 6.73665 0.397922 3.83508 0.88436C2.77504 1.06207 1.93085 1.87587 1.71831 2.93105C0.744596 7.76505 0.691467 12.7393 1.56171 17.593L1.91601 19.5691C2.02526 20.1785 2.7681 20.422 3.21691 19.9957L7.49357 15.9328C7.9038 15.5431 8.54743 15.5431 8.95766 15.9328L13.2343 19.9957C13.6831 20.422 14.426 20.1785 14.5352 19.5691L14.8895 17.593C15.7598 12.7393 15.7066 7.76505 14.7329 2.93105C14.5204 1.87587 13.6762 1.06207 12.6161 0.88436Z' />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div className='img-container'>
+										<img src='https://imgur.com/vsnWZwq.png' alt='image' />
+									</div>
+								</article>
+							</li>
+							<li>
+								<article>
+									<div className='description'>
+										<div className='info'>
+											<p className='tag red'>Trending</p>
+											<h3>The Burger King</h3>
+											<div className='details'>
+												<time dateTime='24m'>24min</time>
+												<div className='rate'>4.9</div>
+											</div>
+										</div>
+										<div className='save'>
+											<button>
+												<svg
+													viewBox='0 0 16 21'
+													fill='none'
+													xmlns='http://www.w3.org/2000/svg'
+												>
+													<path d='M12.6161 0.88436C9.71458 0.397922 6.73665 0.397922 3.83508 0.88436C2.77504 1.06207 1.93085 1.87587 1.71831 2.93105C0.744596 7.76505 0.691467 12.7393 1.56171 17.593L1.91601 19.5691C2.02526 20.1785 2.7681 20.422 3.21691 19.9957L7.49357 15.9328C7.9038 15.5431 8.54743 15.5431 8.95766 15.9328L13.2343 19.9957C13.6831 20.422 14.426 20.1785 14.5352 19.5691L14.8895 17.593C15.7598 12.7393 15.7066 7.76505 14.7329 2.93105C14.5204 1.87587 13.6762 1.06207 12.6161 0.88436Z' />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div className='img-container'>
+										<img src='https://imgur.com/KbS5Vey.png' alt='image' />
+									</div>
+								</article>
+							</li>
+							<li>
+								<article>
+									<div className='description'>
+										<div className='info'>
+											<p className='tag yellow'>Healthy</p>
+											<h3>The Chicken King</h3>
+											<div className='details'>
+												<time dateTime='24m'>24min</time>
+												<div className='rate'>4.8</div>
+											</div>
+										</div>
+										<div className='save'>
+											<button>
+												<svg
+													viewBox='0 0 16 21'
+													fill='none'
+													xmlns='http://www.w3.org/2000/svg'
+												>
+													<path d='M12.6161 0.88436C9.71458 0.397922 6.73665 0.397922 3.83508 0.88436C2.77504 1.06207 1.93085 1.87587 1.71831 2.93105C0.744596 7.76505 0.691467 12.7393 1.56171 17.593L1.91601 19.5691C2.02526 20.1785 2.7681 20.422 3.21691 19.9957L7.49357 15.9328C7.9038 15.5431 8.54743 15.5431 8.95766 15.9328L13.2343 19.9957C13.6831 20.422 14.426 20.1785 14.5352 19.5691L14.8895 17.593C15.7598 12.7393 15.7066 7.76505 14.7329 2.93105C14.5204 1.87587 13.6762 1.06207 12.6161 0.88436Z' />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div className='img-container'>
+										<img src='https://imgur.com/vsnWZwq.png' alt='image' />
+									</div>
+								</article>
+							</li>
+						</ul>
+						<div className='link'>
+							<a href='#'>
+								View All
+								<svg
+									width='28'
+									height='28'
+									viewBox='0 0 28 28'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										d='M6.55469 13.5469H22.3588'
+										strokeWidth='2.25773'
+										strokeLinecap='round'
+										strokeLinejoin='round'
+									/>
+									<path
+										d='M14.4561 5.64453L22.3581 13.5466L14.4561 21.4487'
+										strokeWidth='2.25773'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</a>
@@ -181,40 +298,7 @@ function App() {
 					</div>
 				</section>
 			</main>
-			<footer>
-				<div className='container'>
-					<div className='footer-top'>
-						<Menu position='footer' />
-					</div>
-
-					<div className='footer-bottom'>
-						<p>© 2023 EATLY All Rights Reserved.</p>
-
-						<ul>
-							<li>
-								<a href='#'>
-									<img src='/instagram.svg' alt='Instagram' />
-								</a>
-							</li>
-							<li>
-								<a href='#'>
-									<img src='/linkedin.svg' alt='LinkedIn' />
-								</a>
-							</li>
-							<li>
-								<a href='#'>
-									<img src='/facebook.svg' alt='Facebook' />
-								</a>
-							</li>
-							<li>
-								<a href='#'>
-									<img src='/twitter.svg' alt='Twitter' />
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+			<Footer />
 		</>
 	)
 }
