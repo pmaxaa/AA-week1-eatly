@@ -6,15 +6,17 @@ export default function PurchaseCard({
 	description,
 	status,
 	time,
+	position,
 }: {
 	title: string
 	image: string
 	description: string
 	status: string
 	time: string
+	position: string
 }) {
 	return (
-		<div className='purchase-card'>
+		<div className={`purchase-card purchase-card-${position}`}>
 			<img src={image} alt={description} />
 			<div className='purchase-card-info'>
 				<h4>{title}</h4>

@@ -1,39 +1,80 @@
 .purchase-card {
-	height: 88.3px;
-	width: 345.17px;
-	border-radius: 12.04px;
-	padding {
-		left: 17.06px;
-		right: 17.23px;
-	}
+	background-color: rgba(255, 255, 255, 1);
 	display: flex;
 	align-items: center;
 	font-family: 'Poppins', sans-serif;
 
 	&-info {
 		color: rgba(50, 49, 66, 1);
-		margin-left: 19.06px;
 		h4 {
-			font-size: 19.06px;
 			font-weight: 600;
-			line-height: 26.69px;
 		}
 		p {
-			font-size: 12.04px;
 			font-weight: 500;
-			line-height: 16.86px;
 			&.cancelled {
 				color: rgba(241, 83, 78, 1);
 			}
 		}
 	}
 	time {
-		font-size: 13.04px;
 		font-weight: 500;
-		line-height: 18.26px;
 		color: rgba(172, 173, 185, 1);
 		align-self: flex-end;
 		margin-left: auto;
-		margin-bottom: 10.1px;
+	}
+
+	&-purchases {
+		height: 88.3px;
+		width: 345.17px;
+		border-radius: 12.04px;
+		padding {
+			left: 17.06px;
+			right: 17.23px;
+		}
+
+		.purchase-card-info {
+			margin-left: 19.06px;
+			h4 {
+				font-size: 19.06px;
+				line-height: 26.69px;
+			}
+			p {
+				font-size: 12.04px;
+				line-height: 16.86px;
+			}
+		}
+
+		time {
+			font-size: 13.04px;
+			line-height: 18.26px;
+			margin-bottom: 10.1px;
+		}
+	}
+
+	&-promo {
+		width: 328.7px;
+		height: 89.45px;
+		border-radius: 16.41px;
+		padding: {
+			left: 16.24px;
+			right: 16.24px;
+		}
+		box-shadow: -9.84px 12.3px 20.51px 0px rgba(0, 0, 0, 0.15);
+		.purchase-card-info {
+			margin-left: 18.15px;
+			h4 {
+				font-size: 15.59px;
+				line-height: 21.82px;
+			}
+			p {
+				font-size: 9.84px;
+				line-height: 13.78px;
+			}
+		}
+		time {
+			font-size: 10.66px;
+			line-height: 14.93px;
+			margin-bottom: 10.16px;
+		}
 	}
 }

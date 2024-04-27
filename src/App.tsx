@@ -3,13 +3,13 @@ import Footer from './Footer'
 import Menu from './Menu'
 import PurchaseCard from './PurchaseCard'
 import Slider from './Slider'
-import AddButton from './atoms/AddButton'
-import Arrow from './atoms/Arrow'
-import LikeButton from './atoms/LikeButton'
-import SaveButton from './atoms/SaveButton'
-import HealthyTag from './molecules/HealthyTag'
-import StarRating from './molecules/StarRating'
-import TrendingTag from './molecules/TrendingTag'
+import AddButton from './UI/AddButton'
+import Arrow from './UI/Arrow'
+import HealthyTag from './UI/HealthyTag'
+import LikeButton from './UI/LikeButton'
+import SaveButton from './UI/SaveButton'
+import StarRating from './UI/StarRating'
+import TrendingTag from './UI/TrendingTag'
 
 function App() {
 	return (
@@ -70,6 +70,16 @@ function App() {
 							</div>
 							<div className='graph-image'>
 								<img src='/graph.png' alt='Order chart' />
+							</div>
+							<div className='purchase-card-image'>
+								<PurchaseCard
+									title='Chicken Hell'
+									image='https://i.imgur.com/dkPS7Q5.png'
+									description='Chicken Hell dish'
+									status='On The Way'
+									time='3:09 PM'
+									position='promo'
+								/>
 							</div>
 						</div>
 					</div>
@@ -374,6 +384,7 @@ function App() {
 										description='Chicken Hell dish'
 										status='On The Way'
 										time='3:09 PM'
+										position='purchases'
 									/>
 								</li>
 								<li>
@@ -383,6 +394,7 @@ function App() {
 										description='Swe Dish dish'
 										status='Delivered'
 										time='Yedterday'
+										position='purchases'
 									/>
 								</li>
 								<li>
@@ -390,8 +402,9 @@ function App() {
 										title='Fish Hell Veg'
 										image='https://i.imgur.com/dkPS7Q5.png'
 										description='Fish Hell Veg dish'
-										status='Canceled'
+										status='Cancelled'
 										time='Yedterday'
+										position='purchases'
 									/>
 								</li>
 							</ul>
@@ -431,10 +444,12 @@ function App() {
 					</div>
 				</section>
 				<section className='reviwes'>
-					<h2 className='top'>
-						<span>Customer</span> Say
-					</h2>
-					<Slider />
+					<div className='reviews-container'>
+						<h2 className='top'>
+							<span>Customer</span> Say
+						</h2>
+						<Slider />
+					</div>
 				</section>
 			</main>
 			<Footer />

@@ -1,4 +1,4 @@
-import Star from '../atoms/Star'
+import Star from './Star'
 import './StarRating.scss'
 
 export default function StarRating({

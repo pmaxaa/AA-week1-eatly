@@ -37,7 +37,7 @@ header {
 		display: flex;
 		justify-content: space-between;
 		padding: {
-			top: 49px;
+			top: 119px;
 			bottom: 85px;
 		}
 		.info {
@@ -167,6 +167,7 @@ header {
 		.picture {
 			position: relative;
 			height: fit-content;
+			margin-right: 83px;
 			.dish-image {
 				img {
 					width: 429.62px;
@@ -212,6 +213,23 @@ header {
 					height: 33px;
 					z-index: 2;
 					background: url(/splash.svg);
+				}
+			}
+			.purchase-card-image {
+				position: absolute;
+				z-index: 2;
+				top: -15%;
+				left: 50%;
+				&::after {
+					content: '';
+					position: absolute;
+					top: -31px;
+					left: 100%;
+					width: 42px;
+					height: 25px;
+					z-index: 2;
+					background: url(/waves.svg);
+					background-position: 50% 50%;
 				}
 			}
 		}
@@ -695,22 +713,25 @@ header {
 				}
 			}
 		}
+
+		box-shadow: 0 100px 150px rgba(50, 49, 66, 0.2);
 	}
 }
 
 .reviwes {
+	.reviews-container {
+		overflow: clip;
+		padding: {
+			top: 116px;
+			bottom: 48.5px;
+		}
+	}
 }
 
 .container {
 	max-width: 1308px;
 	margin: 0 auto;
 	padding: 0 30px;
-	overflow: hidden;
-}
-@media (max-width: 1025px) {
-	.container {
-		max-width: 947.47px;
-	}
 }
 
 .visually-hidden {

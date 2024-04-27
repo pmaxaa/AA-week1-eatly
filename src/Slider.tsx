@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Slider.scss'
-import StarRating from './molecules/StarRating'
+import StarRating from './UI/StarRating'
 
 export default function Slider() {
 	const [view, setView] = useState<string | null>('1')
@@ -65,9 +65,9 @@ export default function Slider() {
 						return (
 							<button
 								id={`btn-${quotation.id}`}
+								className={quotation.id == view ? 'active' : ''}
 								key={quotation.id}
 								onClick={event => {
-									// const id = event.currentTarget.id.match(/(?<=btn-)\d+/)
 									const id = event.currentTarget.id.slice(4)
 									setView(id)
 								}}
