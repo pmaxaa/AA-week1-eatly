@@ -360,19 +360,6 @@ header {
 		padding-bottom: 120px;
 		border-bottom: 1px solid #cbcbcb;
 	}
-	h2 {
-		text-align: center;
-		font-family: 'Poppins', sans-serif;
-		font-size: 45px;
-		font-weight: 600;
-		line-height: 25.56px;
-		color: #323142;
-		margin-bottom: 85px;
-
-		span {
-			color: var(--primary-color);
-		}
-	}
 
 	.restaurant-cards {
 		display: flex;
@@ -429,10 +416,12 @@ header {
 						margin-left: 6.45px;
 						&::before {
 							margin-right: 6.45px;
-							content: url('/restaurant-star.png');
+							content: '';
 							display: inline-block;
 							width: 25.79px;
 							height: 25.79px;
+							background-image: url('/restaurant-star.png');
+							background-position: 50% 50%;
 						}
 					}
 				}
@@ -440,25 +429,6 @@ header {
 
 			.save {
 				align-self: flex-end;
-				button {
-					width: 40.09px;
-					height: 40.09px;
-					padding: {
-						top: 10.31px;
-						right: 12.76px;
-						bottom: 10.08px;
-						left: 12.76px;
-					}
-					border-radius: 50%;
-					border: none;
-					background-color: #dbd9ee;
-				}
-
-				svg {
-					width: 14.56px;
-					height: 19.69px;
-					fill: #6c5fbc;
-				}
 			}
 		}
 
@@ -476,57 +446,158 @@ header {
 			}
 		}
 	}
+}
 
-	.link {
-		margin-top: 65.7px;
-		text-align: end;
-		a {
+.dishes {
+	.container {
+		padding-top: 100px;
+		padding-bottom: 120px;
+		border-bottom: 1px solid #cbcbcb;
+	}
+
+	.dish-cards {
+		display: flex;
+		justify-content: space-between;
+		li {
+			width: 18%;
+		}
+	}
+
+	article {
+		display: flex;
+		flex-direction: column-reverse;
+		border-radius: 34.58px;
+		border: 1.44px solid rgba(244, 244, 246, 1);
+		padding: {
+			top: 36.98px;
+			right: 24.65px;
+			bottom: 31px;
+			left: 15.07px;
+		}
+		position: relative;
+
+		.description {
 			font-family: 'Poppins', sans-serif;
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 45.18px;
-			color: #acadb9;
-			svg {
-				margin-left: 20px;
-				vertical-align: middle;
-				stroke: #acadb9;
+			margin-right: 7.75px;
+			margin-left: 7.98px;
+			.info {
+				h3 {
+					font-size: 23.05px;
+					font-weight: 600;
+					line-height: 37.46px;
+					text-align: left;
+					color: rgba(50, 49, 66, 1);
+				}
+
+				.details {
+					font-size: 17.29px;
+					font-weight: 400;
+					line-height: 23.05px;
+					display: flex;
+					align-items: center;
+
+					time {
+						&::after {
+							content: '•';
+							margin-left: 0.46rem;
+						}
+					}
+
+					.rate {
+						display: flex;
+						align-items: center;
+						position: relative;
+						margin-left: 5.76px;
+						&::before {
+							margin-right: 5.76px;
+							content: '';
+							display: inline-block;
+							width: 23.05px;
+							height: 23.05px;
+							background-image: url('/restaurant-star.png');
+							background-position: 50% 50%;
+						}
+					}
+				}
+				.buy {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 13.03px;
+
+					color: rgba(50, 49, 66, 1);
+					font-size: 25.94px;
+					font-weight: 700;
+					line-height: 40.34px;
+					text-align: left;
+
+					span {
+						color: rgba(142, 151, 166, 1);
+						font-size: 18.81px;
+						font-weight: 700;
+						line-height: 40.34px;
+						text-align: left;
+					}
+				}
+
+				.like-btn {
+					position: absolute;
+					top: 23.79px;
+					right: 21.72px;
+				}
 			}
 		}
 	}
+}
+
+.reviwes {
 }
 
 .container {
 	max-width: 1308px;
 	margin: 0 auto;
 	padding: 0 30px;
+	overflow: hidden;
+}
+@media (max-width: 1025px) {
+	.container {
+		max-width: 947.47px;
+	}
 }
 
 .visually-hidden {
 	display: none;
 }
 
-.tag {
-	display: inline-block;
-	font-size: 12.78px;
-	font-weight: 400;
-	line-height: 19.16px;
-	text-align: left;
+h2 {
+	&.top {
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
+		font-size: 45px;
+		font-weight: 600;
+		line-height: 25.56px;
+		color: #323142;
+		margin-bottom: 85px;
 
-	border-radius: 5.4px;
-	padding: {
-		top: 3.06px;
-		right: 8.21px;
-		bottom: 1.86px;
-		left: 8.64px;
+		span {
+			color: var(--primary-color);
+		}
 	}
+}
 
-	&.yellow {
-		color: rgba(218, 163, 26, 1);
-		background-color: rgba(247, 237, 208, 1);
-	}
-
-	&.red {
-		color: #fb471d;
-		background-color: #f7c5ba;
+.link-view-all {
+	margin-top: 65.7px;
+	text-align: end;
+	a {
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 45.18px;
+		color: #acadb9;
+		svg {
+			margin-left: 20px;
+			vertical-align: middle;
+			stroke: #acadb9;
+		}
 	}
 }

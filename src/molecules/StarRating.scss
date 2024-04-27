@@ -1,0 +1,21 @@
+.star-rating {
+	display: flex;
+
+	&-promo {
+		gap: 4px;
+
+		svg {
+			width: 15.96px;
+			height: 15.28px;
+		}
+	}
+
+	&-review {
+		gap: 5.75px;
+
+		svg {
+			width: 23px;
+			height: 23px;
+		}
+	}
+}

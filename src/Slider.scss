@@ -1,0 +1,166 @@
+// .quotations {
+// 	// display: grid;
+// 	// grid-template-columns: repeat(3, 1fr);
+// 	// grid-template-rows: 239px 1fr;
+
+// 	li {
+// 		&:not(.view):not(.view ~ li) {
+// 			display: none;
+// 		}
+// 		&.view {
+// 			grid-row-end: span 2;
+// 		}
+// 	}
+// }
+
+// .blockquote-text {
+// 	font-size: 18px;
+// 	font-style: italic;
+// 	font-weight: 400;
+// 	line-height: 26.12px;
+// 	text-align: justify;
+
+// 	color: #636363;
+// }
+
+// .blockquote-rating {
+// 	margin-top: 39px;
+// }
+
+// li blockquote {
+// 	font-family: 'Poppins', sans-serif;
+// 	width: 528px;
+// 	height: 346px;
+// 	border-radius: 20.12px;
+// 	padding: 38px 43px;
+// 	.blockquote-author {
+// 		display: none;
+
+// 		&--view {
+// 			display: flex;
+// 			gap: 20.89px;
+// 			align-items: center;
+// 			position: relative;
+// 			margin-bottom: 31.96px;
+// 			.author-info {
+// 				cite {
+// 					color: #030314;
+// 					font-style: normal;
+
+// 					font-size: 20.89px;
+// 					font-weight: 500;
+// 					line-height: 31.34px;
+// 					text-align: left;
+// 				}
+// 				p {
+// 					color: #5e5d5d;
+// 					font-size: 16.71px;
+// 					font-weight: 500;
+// 					line-height: 26.12px;
+// 					text-align: left;
+// 				}
+// 			}
+// 			&::after {
+// 				content: url('/quotes.png');
+// 				display: inline-block;
+// 				width: 58.69px;
+// 				height: 44.25px;
+// 				margin-left: 134.18px;
+// 			}
+// 		}
+// 	}
+// }
+
+// .slider-buttons {
+// 	grid-column: span 2;
+// 	button {
+// 		width: 222px;
+// 		height: 11px;
+// 		border-radius: 50px;
+// 	}
+// }
+
+// .slider-container {
+// 	margin-left: 84px;
+// 	display: grid;
+// 	grid-template-columns: 1fr 1fr 1fr;
+// 	grid-template-rows: 239px 1fr;
+// 	grid-auto-flow: column;
+// 	gap: 46px;
+// 	// overflow: hidden;
+// }
+
+.quotations {
+	display: flex;
+
+	margin-left: 84px;
+
+	li {
+		&:not(.view):not(.view ~ li) {
+			display: none;
+		}
+	}
+}
+
+.blockquote-text {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 26.12px;
+	text-align: justify;
+
+	color: #636363;
+}
+
+li blockquote {
+	font-family: 'Poppins', sans-serif;
+	width: 528px;
+	border-radius: 20.12px;
+	padding: 38px 43px;
+	.blockquote-author {
+		display: none;
+
+		&--view {
+			display: flex;
+			gap: 20.89px;
+			align-items: center;
+			position: relative;
+			margin-bottom: 31.96px;
+			.author-info {
+				cite {
+					color: #030314;
+					font-style: normal;
+
+					font-size: 20.89px;
+					font-weight: 500;
+					line-height: 31.34px;
+					text-align: left;
+				}
+				p {
+					color: #5e5d5d;
+					font-size: 16.71px;
+					font-weight: 500;
+					line-height: 26.12px;
+					text-align: left;
+				}
+			}
+			&::after {
+				content: url('/quotes.png');
+				display: inline-block;
+				width: 58.69px;
+				height: 44.25px;
+				margin-left: 134.18px;
+			}
+		}
+	}
+}
+
+.slider-buttons {
+	button {
+		width: 222px;
+		height: 11px;
+		border-radius: 50px;
+	}
+	text-align: right;
+	margin-right: 250px;
+}
