@@ -265,7 +265,7 @@ header {
 	}
 }
 
-.download-app {
+.mobile-app {
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -544,6 +544,154 @@ header {
 					position: absolute;
 					top: 23.79px;
 					right: 21.72px;
+				}
+			}
+		}
+	}
+}
+
+.purchases {
+	.container {
+		padding-top: 103px;
+		padding-bottom: 138px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #cbcbcb;
+	}
+	&-text {
+		width: 45%;
+		h2 {
+			margin-left: 11px;
+			font-family: 'Poppins', sans-serif;
+			font-size: 50.92px;
+			font-weight: 700;
+			line-height: 58.2px;
+			color: rgba(24, 24, 27, 1);
+
+			span {
+				color: var(--primary-color);
+			}
+		}
+	}
+
+	&-list {
+		margin-top: 48px;
+		li + li {
+			margin-top: 15.05px;
+		}
+	}
+
+	&-illustration {
+		border-radius: 25.13px;
+		border: 1.57px solid rgba(237, 242, 247, 1);
+		width: 43%;
+		padding: {
+			top: 37.69px;
+			right: 37.69px;
+			bottom: 45.55px;
+			left: 37.96px;
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			h3 {
+				font-size: 28.27px;
+				font-weight: 800;
+				line-height: 38.17px;
+				color: rgba(26, 32, 44, 1);
+			}
+			select {
+				width: 175.91px;
+				height: 53.4px;
+				border: none;
+				text-align: center;
+				color: rgba(26, 32, 44, 1);
+				font-size: 18.85px;
+				font-weight: 600;
+				line-height: 28.27px;
+			}
+		}
+
+		.dashboard {
+			li + li {
+				margin-top: 21.99px;
+			}
+		}
+
+		.dashboard-item {
+			position: relative;
+			border-radius: 12.04px;
+			margin: {
+				left: 25.13px;
+				right: 25.13px;
+				top: 25.13px;
+				bottom: 54.98px;
+			}
+			display: flex;
+			align-items: center;
+			font-family: 'Poppins', sans-serif;
+
+			&-info {
+				margin-left: 18.85px;
+				h4 {
+					font-size: 18.85px;
+					font-weight: 800;
+					line-height: 28.27px;
+					color: rgba(26, 32, 44, 1);
+					margin-top: 3.14px;
+				}
+				p {
+					font-size: 15.71px;
+					font-weight: 500;
+					line-height: 23.56px;
+					color: rgba(160, 174, 192, 1);
+				}
+			}
+			.price {
+				font-size: 21.99px;
+				font-weight: 800;
+				line-height: 32.98pxpx;
+				color: rgba(26, 32, 44, 1);
+				margin-left: auto;
+			}
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 9.42px;
+				border-radius: 78.53px;
+				z-index: 1;
+				top: 137%;
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				height: 9.42px;
+				border-radius: 78.53px;
+				z-index: 2;
+				top: 137%;
+			}
+			&.expense {
+				&::before {
+					background-color: rgba(108, 95, 188, 0.2);
+				}
+				&::after {
+					width: 72%;
+					background-color: rgba(108, 95, 188, 1);
+				}
+			}
+			&.vocher-usage {
+				&::before {
+					background-color: rgba(251, 173, 24, 0.2);
+				}
+				&::after {
+					width: 60%;
+					background-color: rgba(251, 173, 24, 1);
 				}
 			}
 		}

@@ -70,7 +70,6 @@ button {
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
-	background-color: transparent;
 }
 button:focus,
 button:active {
@@ -82,8 +81,18 @@ button::-moz-focus-inner {
 	border: 0;
 }
 
+select {
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+	box-shadow: none;
+}
+
 img {
 	max-width: 100%;
+	max-height: 100%;
 }
 /*
 h1 {

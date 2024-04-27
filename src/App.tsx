@@ -1,6 +1,7 @@
 import './App.scss'
 import Footer from './Footer'
 import Menu from './Menu'
+import PurchaseCard from './PurchaseCard'
 import Slider from './Slider'
 import AddButton from './atoms/AddButton'
 import Arrow from './atoms/Arrow'
@@ -94,7 +95,7 @@ function App() {
 						</dl>
 					</div>
 				</section>
-				<section className='download-app'>
+				<section className='mobile-app'>
 					<div className='container'>
 						<div className='phone-image'>
 							<img
@@ -356,6 +357,76 @@ function App() {
 								View All
 								<Arrow />
 							</a>
+						</div>
+					</div>
+				</section>
+				<section className='purchases'>
+					<div className='container'>
+						<div className='purchases-text'>
+							<h2>
+								Control <span>Purchases</span> Via Dashboard
+							</h2>
+							<ul className='purchases-list'>
+								<li>
+									<PurchaseCard
+										title='Chicken Hell'
+										image='https://i.imgur.com/dkPS7Q5.png'
+										description='Chicken Hell dish'
+										status='On The Way'
+										time='3:09 PM'
+									/>
+								</li>
+								<li>
+									<PurchaseCard
+										title='Swe Dish'
+										image='https://i.imgur.com/dkPS7Q5.png'
+										description='Swe Dish dish'
+										status='Delivered'
+										time='Yedterday'
+									/>
+								</li>
+								<li>
+									<PurchaseCard
+										title='Fish Hell Veg'
+										image='https://i.imgur.com/dkPS7Q5.png'
+										description='Fish Hell Veg dish'
+										status='Canceled'
+										time='Yedterday'
+									/>
+								</li>
+							</ul>
+						</div>
+						<div className='purchases-illustration'>
+							<div className='title'>
+								<h3>Purchases</h3>
+								<select>
+									<option value='thisMonth'>This month</option>
+									<option value='thisWeek'>This week</option>
+									<option value='thisYear'>This year</option>
+								</select>
+							</div>
+							<ul className='dashboard'>
+								<li>
+									<div className='dashboard-item expense'>
+										<img src='/expense.svg' alt='wallet icon' />
+										<div className='dashboard-item-info'>
+											<h4>Expense</h4>
+											<p>Increased By 10%</p>
+										</div>
+										<div className='price'>$409.00</div>
+									</div>
+								</li>
+								<li>
+									<div className='dashboard-item vocher-usage'>
+										<img src='/vocherUsage.svg' alt='vocher icon' />
+										<div className='dashboard-item-info'>
+											<h4>Vocher Usage</h4>
+											<p>Increased By 5%</p>
+										</div>
+										<div className='price'>$45.78</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>

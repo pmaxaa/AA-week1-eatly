@@ -1,0 +1,39 @@
+.purchase-card {
+	height: 88.3px;
+	width: 345.17px;
+	border-radius: 12.04px;
+	padding {
+		left: 17.06px;
+		right: 17.23px;
+	}
+	display: flex;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+
+	&-info {
+		color: rgba(50, 49, 66, 1);
+		margin-left: 19.06px;
+		h4 {
+			font-size: 19.06px;
+			font-weight: 600;
+			line-height: 26.69px;
+		}
+		p {
+			font-size: 12.04px;
+			font-weight: 500;
+			line-height: 16.86px;
+			&.cancelled {
+				color: rgba(241, 83, 78, 1);
+			}
+		}
+	}
+	time {
+		font-size: 13.04px;
+		font-weight: 500;
+		line-height: 18.26px;
+		color: rgba(172, 173, 185, 1);
+		align-self: flex-end;
+		margin-left: auto;
+		margin-bottom: 10.1px;
+	}
+}
